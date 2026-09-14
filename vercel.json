@@ -1,0 +1,1 @@
+{"rewrites":[{"source":"/api/appointments","destination":"/api/index?route=appointments"},{"source":"/api/clients","destination":"/api/index?route=clients"}],"functions":{"api/index.js":{"maxDuration":10}}}
