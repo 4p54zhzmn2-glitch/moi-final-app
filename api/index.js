@@ -2,7 +2,7 @@ const{Pool}=require('pg');let p;function db(){if(p)return p;let s=process.env.DA
   try{
     await init();
     const q=req.query||{};
-    const path=(req.url||'').split('?')[0].replace(/\\/+$/,'');
+    const path=(req.url||'').split('?')[0].replace(/\/+$/,'');
     let r=q.route||'';
     if(!r){
       if(path==='/api/appointments'||path==='/api/appointments/index.js'||path.endsWith('/api/appointments'))r='appointments';
